@@ -1,1 +1,1 @@
-https://github.com/AntonZhuravskiy/ono-tebe-nado-fd-finish
+https://github.com/AntonZhuravskiy/ono-tebe-nado-fd
