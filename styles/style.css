@@ -43,7 +43,7 @@
 
 /* ? <!-- ? Навигация --> */
 
-.navigation__wrapper{
+.navigation__wrapper {
   padding-left: 4px;
 }
 
@@ -270,15 +270,15 @@
 }
 
 .card-image-left {
-  background-image: url("/images/card-lot-01.jpg");
+  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card-image-center {
-  background-image: url("/images/card-lot-02.jpg");
+  background-image: url("../images/card-lot-02.jpg");
 }
 
 .card-image-right {
-  background-image: url("/images/card-lot-03.jpg");
+  background-image: url("../images/card-lot-03.jpg");
 }
 
 /* ! <!-- ! Lots ( Третья секция ) --> */
