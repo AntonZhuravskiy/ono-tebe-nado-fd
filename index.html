@@ -16,15 +16,17 @@
       <!-- ? 1. Первая колонка  -->
       <div class="header__column justify-self-flex-start">
         <!-- ? Навигация -->
-        <nav class="navigation__list">
-          <a href="#0" class="navigation__item text-decoration-none">
-            главная
-          </a>
-          <span class="circle"></span>
+        <ul class="navigation__list">
+          <li class="list-style-type-none">
+            <a href="#0" class="navigation__item text-decoration-none">главная</a>
+          </li>
+          <li class="list-style-type-circle">
           <a href="#0" class="navigation__item">посмотреть лоты</a>
-          <span class="circle"></span>
+          </li>
+          <li class="navigation__wrapper list-style-type-circle">
           <a href="#0" class="navigation__item">об аукционе</a>
-        </nav>
+          </li>
+        </ul>
         <!-- ? Навигация -->
       </div>
       <!-- ? 1. Первая колонка  -->
@@ -69,15 +71,15 @@
 
       <!-- ! Cover ( Вторая секция ) -->
       <section class="cover">
-        <div class="cover__header">
-          <span class="cover__word-one">ОНО</span>
-          <span class="cover__word-two">ТЕБЕ</span>
-          <span class="cover__word-three">НАДО</span>
-        </div>
+        <h1 class="cover__header">
+          <span class="cover__top-word">ОНО</span>
+          <span class="cover__center-word">ТЕБЕ</span>
+          <span class="cover__bottom-word">НАДО</span>
+        </h1>
         <div class="cover__footer">
-          <span class="cover__text">
-            Аукцион вещей, вкоторые никто не верил
-          </span>
+          <p class="cover__text">
+            Аукцион вещей, в которые никто не верил
+          </p>
           <a href="#0" class="cover__button">Сделать ставку</a>
         </div>
       </section>
@@ -90,38 +92,38 @@
       <section class="lots">
         <h2 class="lots__title">Лоты</h2>
         <div class="card__list">
-          <div class="card__item card-image-one">
+          <a href="#0" class="card__item card-image-left text-decoration-none" >
             <h3 class="card__title">
               Фильм режиссёра, который бросил киношколу
             </h3>
-            <span class="card__description">
+            <p class="card__description">
               Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
               ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-            </span>
-          </div>
-          <div class="card__item card-image-two">
+            </p>
+          </a>
+          <a href="#0" class="card__item card-image-center text-decoration-none">
             <h3 class="card__title">
               Книга, где описан один скучный день из жизни рекламного агента
             </h3>
-            <span class="card__description">
+            <p class="card__description">
               Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
               переходами на древнеанглийский. В ней одновременно рассказывается
               о 16 июня 1904 года и об истории литературы, начиная с античных
               времён. И это всё накладывается на эпическую поэму Гомера. Сколько
               бы вы поставили на «Улисса» Джеймса Джойса?
-            </span>
-          </div>
-          <div class="card__item card-image-three">
+            </p>
+          </a>
+          <a href="#0" class="card__item card-image-right text-decoration-none">
             <h3 class="card__title">
               Картина, которую повторит даже 5-летний сын маминой подруги
             </h3>
-            <span class="card__description">
+            <p class="card__description">
               Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
               похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...
               Сколько бы вы на такое поставили, если бы не знали, что это — одна
               из революционных работ Кандинского?
-            </span>
-          </div>
+            </p>
+          </a>
         </div>
         <a href="#0" class="lots__button"> посмотреть больше </a>
       </section>
@@ -154,22 +156,22 @@
         <div class="about__footer">
           <!-- ? Текст  -->
           <div class="about__content">
-            <span class="about__text">
+            <p class="about__text">
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
               или картина, которую может нарисовать даже ребёнок? Кому нужны все
               эти странные вещи, созданные любителями?
-            </span>
-            <span class="about__text">
+            </p>
+            <p class="about__text__bottom">
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
-              непонятые. Когда-то они казались просто неудачными. Но, несмотря
+              непонятые. Когда-то они казались просто неудачными. Но, несмотря <br>
               на критику, кажущуюся простоту или сложность, сейчас без этих
               лотов невозможно представить современную культуру. Когда в эти
               вещи не верил никто, продолжали верить их создатели. И сейчас эти
               лоты стали культовыми.
-            </span>
+            </p>
           </div>
           <!-- ? Текст -->
         </div>

@@ -1,18 +1,4 @@
-@font-face {
-  font-family: "Raleway-Bold";
-  src: url("./fonts/Raleway-Bold.woff") format("woff"),
-    url("./fonts/Raleway-Bold.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Raleway-Regular";
-  src: url("./fonts/Raleway-Regular.woff") format("woff"),
-    url("./fonts/Raleway-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
 
 .container {
   width: 1100px;
@@ -35,6 +21,14 @@
   justify-self: flex-end;
 }
 
+.list-style-type-circle {
+  list-style-type: circle;
+}
+
+.list-style-type-none {
+  list-style-type: none
+}
+
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  */
 
 /* ! <!-- ! Header ( Первая секция ) --> */
@@ -49,24 +43,19 @@
 
 /* ? <!-- ? Навигация --> */
 
-.circle {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  border-width: 0.5px;
-  border-style: solid;
-  color: #000000;
+.navigation__wrapper{
+  padding-left: 4px;
 }
 
 .navigation__list {
-  width: 391.4786376953125px;
-  height: 22.00001335144043px;
+  width: 391px;
+  height: 22px;
 
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 32px;
 
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.13px;
@@ -133,7 +122,7 @@
 /* ! <!-- ! Cover ( Вторая секция ) --> */
 
 .cover {
-  padding: 165px 50px 50px 50px;
+  padding: 165px 20px 50px 50px; /* ИЗМЕНИЛ С 50px на 20px*/
 
   background: url("../images/cover.jpg");
   background-color: rgba(0, 0, 0, 0.6);
@@ -152,35 +141,37 @@
   font-weight: 700;
   font-size: 100px;
   line-height: 115px;
-  letter-spacing: 25px;
-
+  letter-spacing: 0.3em; /* ИЗМЕНИЛ С 25px на 0.3em*/
   padding-bottom: 106px;
 }
 
-.cover__word-one {
+.cover__top-word {
   text-align: left;
 }
 
-.cover__word-two {
+.cover__center-word {
   text-align: center;
 }
 
-.cover__word-three {
+.cover__bottom-word {
+  display: flex;
   text-align: right;
+  margin-left: auto;
 }
 
 .cover__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 30px;
 }
 
 .cover__text {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 28px;
-  word-spacing: 20px;
+  word-spacing: 18px;
   text-transform: uppercase;
 }
 
@@ -217,7 +208,7 @@
   line-height: 46.96px;
   letter-spacing: 0%;
 
-  padding: 0 0 27px 40px;
+  padding: 0 0 27px 65px; /* ИЗМЕНИЛ */
 
   text-transform: uppercase;
 }
@@ -237,7 +228,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 48px 40px;
+  padding: 51px 40px; /* ИЗМЕНИЛ */
 
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply;
@@ -251,11 +242,8 @@
   font-size: 22px;
   line-height: 26.4px;
   letter-spacing: 0%;
-
   padding-bottom: 30px;
-
   text-decoration: underline;
-  text-underline-offset: 5px;
   text-transform: uppercase;
 }
 
@@ -265,6 +253,7 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
+  text-decoration: none;
 }
 
 .lots__button {
@@ -277,18 +266,18 @@
   display: inline-block;
   text-underline-offset: 5px;
 
-  padding: 30px 0 0 40px;
+  padding: 30px 0 0 64px; /* ИЗМЕНИЛ */
 }
 
-.card-image-one {
+.card-image-left {
   background-image: url("/images/card-lot-01.jpg");
 }
 
-.card-image-two {
+.card-image-center {
   background-image: url("/images/card-lot-02.jpg");
 }
 
-.card-image-three {
+.card-image-right {
   background-image: url("/images/card-lot-03.jpg");
 }
 
@@ -339,12 +328,13 @@
   text-transform: uppercase;
 
   color: #000000;
+  padding-top: 10px;
 }
 
 /* ? <!-- ? Заголовок --> */
 
 .about__footer {
-  padding-left: 312px;
+  padding-left: 315px;
 }
 
 /* ? <!-- ? Текст  --> */
@@ -361,10 +351,19 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0%;
+  padding-top: 7px;
+  color: #000000;
+}
+.about__text__bottom {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding-top: 0px;
 
   color: #000000;
 }
-
 /* ? <!-- ? Текст  --> */
 
 /* ! <!-- ! About ( Четвертая секция ) --> */
